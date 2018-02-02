@@ -85,7 +85,7 @@
   //pronountiation
 
       $.ajax({ 
-        url:'http://api.wordnik.com:80/v4/word.json/'+searchTerm+'/pronunciations?useCanonical=false&typeFormat=ahd&limit=50&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
+        url:'https://api.wordnik.com:80/v4/word.json/'+searchTerm+'/pronunciations?useCanonical=false&typeFormat=ahd&limit=50&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
         data: 'query', 
         dataType: 'json',
         type: 'GET', 
@@ -100,7 +100,7 @@
   //definitions
   
       $.ajax({ 
-        url:'http://api.wordnik.com:80/v4/word.json/'+searchTerm+'/definitions?limit=200&includeRelated=true&useCanonical=false&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
+        url:'https://api.wordnik.com:80/v4/word.json/'+searchTerm+'/definitions?limit=200&includeRelated=true&useCanonical=false&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
         data: 'query', 
         dataType: 'json',
         type: 'GET', 
@@ -122,7 +122,7 @@
  
 //Synonyms
  $.ajax({ 
-        url:'http://api.wordnik.com:80/v4/word.json/'+searchTerm+'/relatedWords?useCanonical=false&relationshipTypes=synonym&limitPerRelationshipType=10&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
+        url:'https://api.wordnik.com:80/v4/word.json/'+searchTerm+'/relatedWords?useCanonical=false&relationshipTypes=synonym&limitPerRelationshipType=10&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
         data: 'query', 
         dataType: 'json',
         type: 'GET', 
@@ -144,7 +144,7 @@
       // Antonyms 
 
       $.ajax({ 
-        url:'http://api.wordnik.com:80/v4/word.json/'+searchTerm+'/relatedWords?useCanonical=false&relationshipTypes=antonym&limitPerRelationshipType=10&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
+        url:'https://api.wordnik.com:80/v4/word.json/'+searchTerm+'/relatedWords?useCanonical=false&relationshipTypes=antonym&limitPerRelationshipType=10&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
         data: 'query', 
         dataType: 'json',
         type: 'GET', 
@@ -165,7 +165,7 @@
       
       // top Examples
       $.ajax({ 
-        url:'http://api.wordnik.com:80/v4/word.json/'+searchTerm+'/topExample?useCanonical=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
+        url:'https://api.wordnik.com:80/v4/word.json/'+searchTerm+'/topExample?useCanonical=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
         data: 'query', 
         dataType: 'json',
         type: 'GET', 
@@ -178,7 +178,7 @@
            
       //examples
             $.ajax({ 
-        url:'http://api.wordnik.com:80/v4/word.json/'+searchTerm+'/examples?includeDuplicates=false&useCanonical=false&skip=0&limit=1&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
+        url:'https://api.wordnik.com:80/v4/word.json/'+searchTerm+'/examples?includeDuplicates=false&useCanonical=false&skip=0&limit=1&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5' ,
         data: 'query', 
         dataType: 'json',
         type: 'GET', 
